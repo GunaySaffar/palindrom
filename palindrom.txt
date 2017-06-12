@@ -1,0 +1,18 @@
+var n=Number(prompt("Enter the number"));
+var M=[],i=0,count;
+while (n>0){
+  M[i]=n%10;
+  n=Math.floor(n/10);
+  i++;
+  }
+for (var i=0;i<M.length;i++){
+  if(M[i]!=M[(M.length-1)-i])
+  {
+    count=1;   
+}
+}
+if (count==1){
+  console.log("palindrom deyil")
+}else {
+  console.log("Palindromdur")
+}
